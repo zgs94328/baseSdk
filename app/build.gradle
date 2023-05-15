@@ -52,7 +52,7 @@ android {
 dependencies {
 
 
-    implementation project(path: ':library_amap')
+//    implementation project(path: ':library_amap')
     implementation project(path: ':library_net')
     implementation project(path: ':library_base')
     implementation project(path: ':library_qrcode')
