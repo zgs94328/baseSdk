@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginBottom="20dp"
+        android:background="#50000000"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#1E95EA"
+            android:gravity="center_vertical"
+            android:text="爱宠计划" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/teal_200"
+            android:gravity="center_vertical"
+            android:text="日历栏目" />
+    </LinearLayout>
+</layout>

@@ -1,0 +1,64 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+android {
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.longyan.mmmutually"
+        minSdk 21
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+        manifestPlaceholders = [qqappid: "101909069"]
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        release {
+            keyAlias "mutually"
+            keyPassword "mm123456"
+            storeFile file("../mmKey.jks")
+            storePassword "mm123456"
+
+            v1SigningEnabled true
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug{
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        dataBinding = true
+    }
+}
+
+dependencies {
+
+
+    implementation project(path: ':library_amap')
+    implementation project(path: ':library_net')
+    implementation project(path: ':library_base')
+    implementation project(path: ':library_qrcode')
+    implementation project(path: ':library_umeng')
+    implementation project(path: ':library_net')
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+}

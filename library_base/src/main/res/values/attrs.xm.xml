@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ImageUploader">
+        <attr name="addImageRes" format="reference" />
+        <attr name="spanCount" format="integer" />
+        <attr name="maxImages" format="integer" />
+        <attr name="imageRadius" format="dimension" />
+        <attr name="hSpace" format="dimension" />
+        <attr name="vSpace" format="dimension" />
+        <attr name="delImageRes" format="reference" />
+        <attr name="delImageMargin" format="dimension" />
+    </declare-styleable>
+    <!--验证码发送按钮-->
+    <declare-styleable name="VerifyCodeButton">
+        <attr name="vcb_defText" format="string" />
+        <attr name="vcb_countDownText" format="string" />
+        <attr name="vcb_resendText" format="string" />
+        <attr name="vcb_resendDuration" format="integer" />
+        <attr name="vcb_alphaWhenCountDown" format="boolean" />
+    </declare-styleable>
+</resources>
