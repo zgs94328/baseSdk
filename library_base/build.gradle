@@ -110,7 +110,7 @@ dependencies {
     //数据倒灌
     api 'com.kunminx.arch:unpeek-livedata:7.8.0'
     //快速ui开发框架
-    api 'com.github.RuffianZhong:RWidgetHelper:androidx.v0.0.11'
+//    api 'com.github.RuffianZhong:RWidgetHelper:androidx.v0.0.11'
 
     //屏幕适配
     api 'com.github.JessYanCoding:AndroidAutoSize:v1.2.1'
