@@ -15,6 +15,7 @@ import com.zgs.library_umeng.UmengShareUtil
 import com.zgs.library_umeng.bean.LoginData
 import com.zgs.library_umeng.util.UmengUtil
 import com.zgs.myapplication.databinding.ActivityMainBinding
+import rxhttp.RxHttpPlugins
 
 class MainActivity : AppCompatActivity() {
 
@@ -39,7 +40,6 @@ class MainActivity : AppCompatActivity() {
 
         }
         mBing.floatingButton2.singleClick {
-
             UmengLoginUtil.wxLogin(this, false, object : UmengUtil.Callback {
                 override fun onComplete(loginData: LoginData?) {
                     super.onComplete(loginData)
