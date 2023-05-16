@@ -9,13 +9,7 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
 import androidx.lifecycle.LifecycleOwner
 import com.zgs.library.base.ext.singleClick
-import com.zgs.library_umeng.Platform
-import com.zgs.library_umeng.UmengLoginUtil
-import com.zgs.library_umeng.UmengShareUtil
-import com.zgs.library_umeng.bean.LoginData
-import com.zgs.library_umeng.util.UmengUtil
 import com.zgs.myapplication.databinding.ActivityMainBinding
-import rxhttp.RxHttpPlugins
 
 class MainActivity : AppCompatActivity() {
 
@@ -32,19 +26,11 @@ class MainActivity : AppCompatActivity() {
 
         })
         mBing.floatingButton.singleClick {
-            UmengShareUtil.shareWeb(this@MainActivity, platform = Platform.WxFriend,
-                url = "https://www.baidu.com", title = "三生三世",
-                thumbRes = R.mipmap.ic_launcher, cb = object : UmengUtil.Callback {
 
-                })
 
         }
         mBing.floatingButton2.singleClick {
-            UmengLoginUtil.wxLogin(this, false, object : UmengUtil.Callback {
-                override fun onComplete(loginData: LoginData?) {
-                    super.onComplete(loginData)
-                }
-            })
+
         }
     }
 

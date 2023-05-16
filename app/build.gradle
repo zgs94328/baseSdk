@@ -42,11 +42,11 @@ dependencies {
 
 
 //    implementation project(path: ':library_amap')
-    implementation project(path: ':library_net')
+//    implementation project(path: ':library_net')
     implementation project(path: ':library_base')
-    implementation project(path: ':library_qrcode')
-    implementation project(path: ':library_umeng')
-    implementation project(path: ':library_net')
+//    implementation project(path: ':library_qrcode')
+//    implementation project(path: ':library_umeng')
+//    implementation project(path: ':library_net')
 //    api 'com.zgs.base:zhang:1.0.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
