@@ -9,8 +9,6 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
 import androidx.lifecycle.LifecycleOwner
 import com.zgs.library.base.ext.singleClick
-import com.zgs.library.base.ext.toBitmap
-import com.zgs.library_qrcode.QrCodeUtil
 import com.zgs.library_umeng.Platform
 import com.zgs.library_umeng.UmengLoginUtil
 import com.zgs.library_umeng.UmengShareUtil

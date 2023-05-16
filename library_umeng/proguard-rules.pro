@@ -111,5 +111,7 @@
 -keep class com.linkedin.** { *; }
 -keep class com.android.dingtalk.share.ddsharemodule.** { *; }
 -keepattributes Signature
+-libraryjars libs/open_sdk_3.5.14.3_rc26220c_lite.jar
+-libraryjars libs/share-wx-7.3.1.aar
 
 

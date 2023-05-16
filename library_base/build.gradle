@@ -21,16 +21,16 @@ android {
     buildTypes {
         release {
             // 启用代码压缩、优化及混淆
-            minifyEnabled true
+            minifyEnabled false
             // 启用资源压缩，需配合 minifyEnabled=true 使用
-            zipAlignEnabled true  //压缩优化
+            zipAlignEnabled false  //压缩优化
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         debug{
             // 启用代码压缩、优化及混淆
-            minifyEnabled true
+            minifyEnabled false
             // 启用资源压缩，需配合 minifyEnabled=true 使用
-            zipAlignEnabled true  //压缩优化
+            zipAlignEnabled false  //压缩优化
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }

@@ -32,16 +32,16 @@ android {
     buildTypes {
         release {
             // 启用代码压缩、优化及混淆
-            minifyEnabled true
+            minifyEnabled false
             // 启用资源压缩，需配合 minifyEnabled=true 使用
-            zipAlignEnabled true  //压缩优化
+            zipAlignEnabled false  //压缩优化
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         debug{
             // 启用代码压缩、优化及混淆
-            minifyEnabled true
+            minifyEnabled false
             // 启用资源压缩，需配合 minifyEnabled=true 使用
-            zipAlignEnabled true  //压缩优化
+            zipAlignEnabled false  //压缩优化
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -59,9 +59,9 @@ dependencies {
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.3.0'
     implementation 'androidx.startup:startup-runtime:1.2.0-alpha01'
-    api 'com.umeng.umsdk:common:9.5.6'// (必选)版本号
-    api 'com.umeng.umsdk:asms:1.6.3'// asms包依赖(必选)
-    api 'com.umeng.umsdk:link:1.2.0'//集成U-Link，可选，如要统计分享回流次数和分享新增用户指标则必选
+    implementation 'com.umeng.umsdk:common:9.5.6'// (必选)版本号
+    implementation 'com.umeng.umsdk:asms:1.6.3'// asms包依赖(必选)
+    implementation 'com.umeng.umsdk:link:1.2.0'//集成U-Link，可选，如要统计分享回流次数和分享新增用户指标则必选
     //友盟分享核心组件
     implementation 'com.umeng.umsdk:share-core:7.3.1'
     //微信
