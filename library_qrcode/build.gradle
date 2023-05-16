@@ -47,6 +47,7 @@ android {
 
 dependencies {
     //扫一扫
+    implementation 'androidx.appcompat:appcompat:1.3.0'
     api 'com.github.bingoogolapple.BGAQRCode-Android:zxing:1.3.8'
     compileOnly project(':library_base')
 }
