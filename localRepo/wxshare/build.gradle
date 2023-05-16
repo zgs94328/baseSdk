@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file("share-wx-7.3.1.aar"))
